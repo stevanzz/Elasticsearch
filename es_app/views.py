@@ -12,7 +12,7 @@ r = redis.Redis('localhost')
 def get_mongo_data():
 	try:
 		print "Getting latest 2 days data from staging mongodb.."
-		client = MongoClient('mongodb://shopprapp.io/')
+		client = MongoClient('')
 		db = client.shoppr_backend_db
 		year = int(time.strftime("%Y", time.localtime(time.time())))
 		month = int(time.strftime("%m", time.localtime(time.time())))
